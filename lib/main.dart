@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_designs/screens/basic_design.dart';
+import 'package:flutter_designs/screens/composite_design.dart';
 import 'package:flutter_designs/screens/scroll_design.dart';
 
 void main() => runApp(const MyApp());
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      initialRoute: "scroll-design-screen",
+      theme: ThemeData.dark(),
+      initialRoute: "composite-design-screen",
       routes: {
         "basic-design-screen": (context) => const BasicDesignScreen(),
         "scroll-design-screen": (context) => const ScrollDesign(),
+        "composite-design-screen": (context) => const CompositeDesignScreen(),
       },
     );
   }
